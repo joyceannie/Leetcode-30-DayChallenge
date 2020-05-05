@@ -5,6 +5,7 @@ class FirstUniqueCharacterInAString {
             map.putIfAbsent(ch, 0);
             map.put(ch, map.get(ch)+1);
         }
+        
         for (int i=0; i<s.length(); i++) {
             if (map.get(s.charAt(i))==1) {
                 return i;
